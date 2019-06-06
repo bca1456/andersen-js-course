@@ -52,10 +52,10 @@ console.log('=============');
 console.log('task5 old', task5Old(['test', 42], { name: 'foo', val: 7 })); // ['test', 42, 'foo', 7]
 console.log('task5 new', task5New(['test', 42], { name: 'foo', val: 7 })); // ['test', 42, 'foo', 7]
 
-// console.log('=============');
+console.log('=============');
 
-// console.log('task6 old', task6Old()); // ['Max', 100, 'Admin', false, '1']
-// console.log('task6 new', task6New()); // ['Max', 100, 'Admin', false, '1']
+console.log('task6 old', task6Old()); // ['Max', 100, 'Admin', false, '1']
+console.log('task6 new', task6New()); // ['Max', 100, 'Admin', false, '1']
 
 // console.log('=============');
 
