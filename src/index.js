@@ -57,10 +57,10 @@ console.log('=============');
 console.log('task6 old', task6Old()); // ['Max', 100, 'Admin', false, '1']
 console.log('task6 new', task6New()); // ['Max', 100, 'Admin', false, '1']
 
-// console.log('=============');
+console.log('=============');
 
-// console.log('task7 old', task7Old()); // {test: 0, foo: 1, bar: 2}
-// console.log('task7 new', task7New()); // {test: 0, foo: 1, bar: 2}
+console.log('task7 old', task7Old()); // {test: 0, foo: 1, bar: 2}
+console.log('task7 new', task7New()); // {test: 0, foo: 1, bar: 2}
 
 // console.log('=============');
 
