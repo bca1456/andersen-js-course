@@ -39,7 +39,7 @@ export function task6New() {
     name,
     value,
     role: { roleName },
-    cases: [obj: firstClassId],
+    cases: [{ id: firstClassId }],
   } = userModule;
   let isActive;
   if (userModule.isActive === undefined) {
