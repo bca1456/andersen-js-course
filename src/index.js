@@ -62,10 +62,10 @@ console.log('=============');
 console.log('task7 old', task7Old()); // {test: 0, foo: 1, bar: 2}
 console.log('task7 new', task7New()); // {test: 0, foo: 1, bar: 2}
 
-// console.log('=============');
+console.log('=============');
 
-// console.log('task8 old', task8Old()); // [0, 5, 10, 15]
-// console.log('task8 new', task8New()); // [0, 5, 10, 15]
+console.log('task8 old', task8Old()); // [0, 5, 10, 15]
+console.log('task8 new', task8New()); // [0, 5, 10, 15]
 
 // console.log('=============');
 
