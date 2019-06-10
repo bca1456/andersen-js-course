@@ -37,6 +37,7 @@ import { transformArrayToNumber } from './array-practice/task6';
 import { take } from './array-practice/task7';
 import { without } from './array-practice/task8';
 import { indexOfAll } from './array-practice/task9';
+import { membersOnActiveMeetups, meetups } from './array-practice/task10';
 
 console.log('=============');
 
@@ -122,3 +123,6 @@ console.log('task8 arr', without([2, 1, 10, 20], 1, 2));
 
 console.log('=============');
 console.log('task9 arr', indexOfAll([1, 2, 3, 1, 2, 3], 1));
+
+console.log('=============');
+console.log('task10 arr', membersOnActiveMeetups(meetups));
