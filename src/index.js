@@ -36,7 +36,7 @@ import { Generator } from './array-practice/task5';
 import { transformArrayToNumber } from './array-practice/task6';
 import { take } from './array-practice/task7';
 import { without } from './array-practice/task8';
-import { task9Arr } from './array-practice/task9';
+import { indexOfAll } from './array-practice/task9';
 
 console.log('=============');
 
@@ -119,3 +119,6 @@ console.log('task7 arr', take([1, 2, 3], 1));
 
 console.log('=============');
 console.log('task8 arr', without([2, 1, 10, 20], 1, 2));
+
+console.log('=============');
+console.log('task9 arr', indexOfAll([1, 2, 3, 1, 2, 3], 1));
