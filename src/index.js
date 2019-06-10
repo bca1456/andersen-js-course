@@ -29,7 +29,7 @@ import { task10Old, task10New } from './es-features/task10';
 
 // ////////
 import { task1Arr } from './array-practice/task1';
-import { task2Arr } from './array-practice/task2';
+import { arrayDiff } from './array-practice/task2';
 import { task3Arr } from './array-practice/task3';
 import { task4Arr } from './array-practice/task4';
 import { task5Arr } from './array-practice/task5';
@@ -93,4 +93,4 @@ console.log('=============');
 console.log('task1 arr');
 console.log('=============');
 
-console.log('task2 arr', task2Arr([1, 3, 3, 4], [1, 3, '4']));
+console.log('task2 arr', arrayDiff([1, 3, 3, 4], [1, 3, '4']));

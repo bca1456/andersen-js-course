@@ -16,7 +16,7 @@
  * console.log(arrayDiff([1, 3, 3, 4], [1, 3, '4'])); -> [4, '4']
  */
 
-export function task2Arr(arr1, arr2) {
+export function arrayDiff(arr1, arr2) {
   var arr = [];
   for (const q of arr1) {
     if (!arr2.includes(q)) {
