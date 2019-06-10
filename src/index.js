@@ -27,6 +27,17 @@ import { task8Old, task8New } from './es-features/task8';
 import { task9Old, task9New } from './es-features/task9';
 import { task10Old, task10New } from './es-features/task10';
 
+// ////////
+import { task1Arr } from './array-practice/task1';
+import { task2Arr } from './array-practice/task2';
+import { task3Arr } from './array-practice/task3';
+import { task4Arr } from './array-practice/task4';
+import { task5Arr } from './array-practice/task5';
+import { task6Arr } from './array-practice/task6';
+import { task7Arr } from './array-practice/task7';
+import { task8Arr } from './array-practice/task8';
+import { task9Arr } from './array-practice/task9';
+
 console.log('=============');
 
 console.log('task1 old', task1Old(10) === 500); // true
@@ -78,3 +89,8 @@ console.log('task10 old', task10Old()); // {name: 'Max', age: 12, color: red}
 console.log('task10 new', task10New()); // {name: 'Max', age: 12, color: red}
 
 console.log('=============');
+
+console.log('task1 arr');
+console.log('=============');
+
+console.log('task2 arr', task2Arr([1, 3, 3, 4], [1, 3, '4']));
