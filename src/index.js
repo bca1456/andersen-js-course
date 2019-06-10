@@ -31,7 +31,7 @@ import { task10Old, task10New } from './es-features/task10';
 import { any } from './array-practice/task1';
 import { arrayDiff } from './array-practice/task2';
 import { forEachRight } from './array-practice/task3';
-import { task4Arr } from './array-practice/task4';
+import { union } from './array-practice/task4';
 import { task5Arr } from './array-practice/task5';
 import { task6Arr } from './array-practice/task6';
 import { task7Arr } from './array-practice/task7';
@@ -97,4 +97,7 @@ console.log('task2 arr', arrayDiff([1, 3, 3, 4], [1, 3, '4']));
 console.log('=============');
 
 console.log('task3 arr', forEachRight([1, 2, 3, 4], val => console.log(val)));
+console.log('=============');
+
+console.log('task4 arr', union([5, 1, 2, 3, 3], [4, 3, 2]));
 console.log('=============');
