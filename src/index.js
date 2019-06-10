@@ -33,8 +33,8 @@ import { arrayDiff } from './array-practice/task2';
 import { forEachRight } from './array-practice/task3';
 import { union } from './array-practice/task4';
 import { Generator } from './array-practice/task5';
-import { task6Arr } from './array-practice/task6';
-import { task7Arr } from './array-practice/task7';
+import { transformArrayToNumber } from './array-practice/task6';
+import { take } from './array-practice/task7';
 import { task8Arr } from './array-practice/task8';
 import { task9Arr } from './array-practice/task9';
 
@@ -112,3 +112,7 @@ gen.next(); // -> 2
 gen.next(); // -> 'Complete!'
 gen.next(); // -> 'Complete!'
 console.log('=============');
+console.log('task6 arr', transformArrayToNumber([10, 20, 30], (acc, item) => acc + item));
+
+console.log('=============');
+console.log('task7 arr', take([1, 2, 3], 1));

@@ -11,3 +11,14 @@
  * console.log(take([1, 2, 3], 5)); -> [1, 2, 3]
  * console.log(take([1, 2, 3], 2)); -> [1, 2]
  */
+
+export function take(arr, quantity) {
+  console.log(arr.length, '    ', quantity);
+  if (quantity > arr.length) {
+    quantity = arr.length;
+  } else if (quantity < 0) {
+    quantity = 1;
+  }
+  arr = arr.slice(0, quantity);
+  return arr;
+}
