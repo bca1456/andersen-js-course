@@ -35,7 +35,7 @@ import { union } from './array-practice/task4';
 import { Generator } from './array-practice/task5';
 import { transformArrayToNumber } from './array-practice/task6';
 import { take } from './array-practice/task7';
-import { task8Arr } from './array-practice/task8';
+import { without } from './array-practice/task8';
 import { task9Arr } from './array-practice/task9';
 
 console.log('=============');
@@ -116,3 +116,6 @@ console.log('task6 arr', transformArrayToNumber([10, 20, 30], (acc, item) => acc
 
 console.log('=============');
 console.log('task7 arr', take([1, 2, 3], 1));
+
+console.log('=============');
+console.log('task8 arr', without([2, 1, 10, 20], 1, 2));

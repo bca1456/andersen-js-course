@@ -11,3 +11,13 @@
  * console.log(without([2, 1, 2, 3], 1, 2)) -> [3]
  * console.log(without([2, 1, 10, 20], 1, 2)) -> [10, 20]
  */
+
+export function without(arr, ...args) {
+  let newArr = arr;
+  for (const arg of args) {
+    newArr = newArr.filter(function(elem) {
+      return elem !== arg;
+    });
+  }
+  return newArr;
+}
