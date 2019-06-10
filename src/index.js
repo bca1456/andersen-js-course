@@ -32,7 +32,7 @@ import { any } from './array-practice/task1';
 import { arrayDiff } from './array-practice/task2';
 import { forEachRight } from './array-practice/task3';
 import { union } from './array-practice/task4';
-import { task5Arr } from './array-practice/task5';
+import { Generator } from './array-practice/task5';
 import { task6Arr } from './array-practice/task6';
 import { task7Arr } from './array-practice/task7';
 import { task8Arr } from './array-practice/task8';
@@ -100,4 +100,15 @@ console.log('task3 arr', forEachRight([1, 2, 3, 4], val => console.log(val)));
 console.log('=============');
 
 console.log('task4 arr', union([5, 1, 2, 3, 3], [4, 3, 2]));
+console.log('=============');
+
+console.log('task5 arr');
+const gen = new Generator();
+gen.createGenerator([1, '6', 3, 2]);
+gen.next(); // -> 1
+gen.next(); // -> '6'
+gen.next(); // -> 3
+gen.next(); // -> 2
+gen.next(); // -> 'Complete!'
+gen.next(); // -> 'Complete!'
 console.log('=============');
