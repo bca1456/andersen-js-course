@@ -9,3 +9,10 @@
  *
  * forEachRight([1, 2, 3, 4], val => console.log(val)); -> в консоль 4 3 2 1
  */
+
+export function forEachRight(arr, cb) {
+  arr = arr.reverse();
+  for (let i = 0; i < arr.length; i++) {
+    cb(arr[i]);
+  }
+}

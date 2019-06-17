@@ -27,11 +27,17 @@ import { task8Old, task8New } from './es-features/task8';
 import { task9Old, task9New } from './es-features/task9';
 import { task10Old, task10New } from './es-features/task10';
 
-// /////////////////////////////
-// ////////////////////////////////
-// ///////////////////////////////
-
-import { task1Arr } from './array-practice/task1';
+// ////////
+import { any } from './array-practice/task1';
+import { arrayDiff } from './array-practice/task2';
+import { forEachRight } from './array-practice/task3';
+import { union } from './array-practice/task4';
+import { Generator } from './array-practice/task5';
+import { transformArrayToNumber } from './array-practice/task6';
+import { take } from './array-practice/task7';
+import { without } from './array-practice/task8';
+import { indexOfAll } from './array-practice/task9';
+import { membersOnActiveMeetups, meetups } from './array-practice/task10';
 
 console.log('=============');
 
@@ -85,4 +91,38 @@ console.log('task10 new', task10New()); // {name: 'Max', age: 12, color: red}
 
 console.log('=============');
 
-console.log('task1 arr', task1Arr([0, 0, 1, 0])); // -> true
+console.log('task1 arr');
+console.log('=============', any([0, 0, 1, 0], x => x >= 2));
+
+console.log('task2 arr', arrayDiff([1, 3, 3, 4], [1, 3, '4']));
+console.log('=============');
+
+console.log('task3 arr', forEachRight([1, 2, 3, 4], val => console.log(val)));
+console.log('=============');
+
+console.log('task4 arr', union([5, 1, 2, 3, 3], [4, 3, 2]));
+console.log('=============');
+
+console.log('task5 arr');
+const gen = new Generator();
+gen.createGenerator([1, '6', 3, 2]);
+gen.next(); // -> 1
+gen.next(); // -> '6'
+gen.next(); // -> 3
+gen.next(); // -> 2
+gen.next(); // -> 'Complete!'
+gen.next(); // -> 'Complete!'
+console.log('=============');
+console.log('task6 arr', transformArrayToNumber([10, 20, 30], (acc, item) => acc + item));
+
+console.log('=============');
+console.log('task7 arr', take([1, 2, 3], 1));
+
+console.log('=============');
+console.log('task8 arr', without([2, 1, 10, 20], 1, 2));
+
+console.log('=============');
+console.log('task9 arr', indexOfAll([1, 2, 3, 1, 2, 3], 1));
+
+console.log('=============');
+console.log('task10 arr', membersOnActiveMeetups(meetups));
