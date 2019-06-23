@@ -3,6 +3,28 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1 {
+.present {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.present>img {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #fff;
+  box-shadow: #180000 0 0 7px 2px;
+  display: block;
+}
+
+.present>span {
+  display: block;
   text-align: center;
+  margin-top: 6px;
+}
+
+.ingredients {
+  width: 40%;
+  margin-top: 15px;
+  text-align: left;
 }
