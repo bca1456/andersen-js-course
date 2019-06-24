@@ -3,17 +3,14 @@
 import ingredientConst from './constants';
 
 import './styles/main.css';
-import Item from './classes/Item';
-import Food from './classes/Food';
-import * as IngredientController from './controller/IngredientController';
+// import Item from './classes/Item';
+// import Food from './classes/Food';
+// import Craft from './classes/Craft';
+import IngredientController from './controller/IngredientController';
 import * as TableController from './controller/TableController';
+// import * as data from './data';
 
-const item = new Item('apple', `./img/apple.png`);
-console.log(item);
-const food = new Food('kebab', './img/kebab.png', true);
-console.log(food);
-
-// const ingridient1 = document.getElementById('i1');
+// const ingredient1 = document.getElementById('i1');
 
 const wrapper = document.querySelector('.wrapper'); // Первый элемент с таким именем
 const divIngredients = document.getElementById(ingredientConst);
@@ -29,17 +26,23 @@ wrapper.addEventListener('click', function(e) {
     console.log('Vitalya - pidr');
   }
 });
-
+// Получаем все доступные ингредиенты
 const allIngredients = IngredientController.getAllIngredients(ingredientConst);
 console.log(allIngredients);
 
+// Каждому ингредиенту добавляем атрибуты для днд
 allIngredients.forEach(function(divIngredient, ingredientIndex) {
   console.log(`ingredientId: ${divIngredient.id}  index:${ingredientIndex}`);
   divIngredient = IngredientController.setAllDNDAttributes(divIngredient);
   // console.log(`ingredient:${ingredient}`);
 });
 
+// Получаем стол для крафта
 let divTable = document.getElementById('table');
 console.log(divTable);
 
+// Добавляем столу  атрибуты для днд
 divTable = TableController.setAllDNDAttributes(divTable);
+
+/* const craft = new Craft(data.elemsToCraft);
+craft.tryToCraft(); */
