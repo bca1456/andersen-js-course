@@ -14,3 +14,17 @@
  * console.log(any([0, 0, 1, 0])); -> true
  * console.log(any([0, 0, 0, 0])); -> false
  */
+
+export function task1Arr(arr, cb) {
+  cb.apply(this, arr);
+}
+
+function cb(array) {
+  for (const value of array) {
+    if (value) {
+      break;
+      return true;
+    }
+  }
+  return false;
+}
