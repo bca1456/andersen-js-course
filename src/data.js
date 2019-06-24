@@ -1,19 +1,31 @@
 import Food from './classes/Food';
+import milkSource from './img/milk.png';
+import eggSource from './img/egg.jpg';
+import cucumberSource from './img/cucumber.jpg';
+import tomatoSource from './img/tomato.jpg';
+import waterSource from './img/water.jpg';
+import orangeSource from './img/orange.jpg';
 // import Craft from './classes/Craft';
+import Recept from './classes/Recept';
+import receptSource from './img/recept.jpg';
 
-const milk = new Food('milk', './img/milk.jpg', true);
-console.log(milk);
-const egg = new Food('egg', './img/egg.jpg', true);
-console.log(egg);
-const cucumber = new Food('cucumber', './img/cucumber.jpg', true);
-console.log(cucumber);
-const tomato = new Food('tomato', './img/tomato.jpg', true);
-console.log(tomato);
-const water = new Food('water', './img/water.jpg', true);
-console.log(water);
-const orange = new Food('orange', './img/orange.jpg', true);
-console.log(orange);
+/* import saladSource from './img/salad.jpg';
+import lemonadeSource from './img/lemonade.jpg';
+import omeletteSource from './img/omelette.jpg'; */
+
+// Добавляем ингридиенты
+const milk = new Food('milk', milkSource, true);
+const egg = new Food('egg', eggSource, true);
+const cucumber = new Food('cucumber', cucumberSource, true);
+const tomato = new Food('tomato', tomatoSource, true);
+const water = new Food('water', waterSource, true);
+const orange = new Food('orange', orangeSource, true);
+
+// Добавляем рецепты
+const omelette = new Recept('omelette', receptSource, 'milk', 'egg');
+const salad = new Recept('salad', receptSource, 'cucumber', 'tomato');
+const lemonade = new Recept('lemonade', receptSource, 'water', 'orange');
 
 export const elemsToCraft = [];
 export const ingredients = [milk, egg, cucumber, tomato, water, orange];
-export const recepts = [];
+export const recepts = [omelette, salad, lemonade];

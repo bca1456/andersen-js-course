@@ -1,27 +1,28 @@
 class Item {
   constructor(name, img) {
-    this.name = name;
-    this.img = img;
+    this._name = name;
+    this._img = img;
   }
 
-  kek() {
+  /* kek() {
     alert(`name:${this.name} img:${this.img}`);
-  }
-  /* get name() {
-    return this.name;
+  } */
+
+  get name() {
+    return this._name;
   }
 
   set name(val) {
-    this.name = val;
+    this._name = val;
   }
 
   get img() {
-    return this.img;
+    return this._img;
   }
 
   set img(val) {
-    this.img = val;
-  } */
+    this._img = val;
+  }
 }
 
 export default Item;

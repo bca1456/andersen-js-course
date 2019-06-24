@@ -1,9 +1,9 @@
 import Item from './Item';
 
-class Food extends Item {
-  constructor(name, img, isEditable) {
+class Recept extends Item {
+  constructor(name, img, ...components) {
     super(name, img);
-    this._isEditable = isEditable;
+    this._components = components;
   }
 
   get name() {
@@ -22,13 +22,13 @@ class Food extends Item {
     this._img = val;
   }
 
-  get isEditable() {
-    return this._isEditable;
+  get components() {
+    return this._components;
   }
 
-  set isEditable(val) {
-    this._isEditable = val;
+  set components(val) {
+    this._components = val;
   }
 }
 
-export default Food;
+export default Recept;
