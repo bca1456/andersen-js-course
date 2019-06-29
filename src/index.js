@@ -6,6 +6,7 @@ import res5 from './asynchronous-programming/5';
 import res6 from './asynchronous-programming/6';
 import res7 from './asynchronous-programming/7';
 import res8 from './asynchronous-programming/8';
+import res9 from './asynchronous-programming/9';
 
 console.log('Hi');
 
@@ -17,3 +18,4 @@ res5();
 res6();
 res7();
 res8();
+res9();
