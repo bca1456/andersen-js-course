@@ -1,3 +1,5 @@
+/* eslint-disable no-throw-literal */
+/* eslint-disable func-names */
 function getResolvedPromise(value) {
   return new Promise(resolve => {
     resolve(value);
