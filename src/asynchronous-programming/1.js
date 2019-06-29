@@ -10,7 +10,9 @@ function foo(x, cb) {
 }
 
 function createCb(srt) {
-  console.log(srt);
+  return function() {
+    console.log(srt);
+  };
 }
 
 export default function res1() {
