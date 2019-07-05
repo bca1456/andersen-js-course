@@ -5,7 +5,4 @@ import * as func from './func';
 
 console.log('Hi');
 
-func.createDelButtons();
-func.deleteLiElement();
-func.doneLiElement();
-func.createNewElement();
+func.start();
