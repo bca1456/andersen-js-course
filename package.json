@@ -6,7 +6,7 @@
   "author": "Viktor Danilov <wikslayer@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server --open && node ./src/server/index.js",
     "build": "webpack"
   },
   "devDependencies": {
@@ -29,5 +29,9 @@
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.5.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mariadb": "^2.0.5"
   }
 }
