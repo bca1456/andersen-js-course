@@ -4,5 +4,5 @@ import '../styles/index.css';
 import * as func from './func';
 
 console.log('Hi');
-
+/* Задание практически не сделано */
 func.start();
