@@ -55,7 +55,7 @@ export function start() {
       document.getElementById('ulID').appendChild(li);
     }
     document.getElementById('inputID').value = '';
-    fetch('http://localhost:3000/alltodos').then(function(response) {
+    fetch('http://localhost:3000/add').then(function(response) {
       console.log(response.headers.get('Content-Type'));
       console.log(response.headers.get('Date'));
       console.log(response.status);
